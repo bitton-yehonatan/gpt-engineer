@@ -19,6 +19,7 @@ class AI:
                 "https://openai.com/waitlist/gpt-4-api"
             )
             self.model = "gpt-3.5-turbo"
+            openai.Model.retrieve(self.model)
 
     def start(self, system, user):
         messages = [
